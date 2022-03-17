@@ -12,7 +12,12 @@ const blogPostSchema = new mongoose.Schema({
   title: String,
   body: String,
   // 1 blog has many comments 1:M
-  comments: [commentSchema]
+  comments: [commentSchema],
+  // a blog can have a blogger which references the user
+  blogger: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }
 })
 
 // both schemas are modelified here

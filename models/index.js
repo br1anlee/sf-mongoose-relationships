@@ -19,3 +19,4 @@ console.log('hello from the models folder!')
 
 // module.exports all the db models/collections
 module.exports.BlogPost = require('./blog')
+module.exports.User = require('./user')
