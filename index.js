@@ -88,7 +88,7 @@ const userCrud = async () => {
     //   }
     // }) // simple population of refs
     // console.log(foundUser)
-    // mongoose does not suppoert update or or destroy with specials
+    // mongoose does not suppoert update or or destroy with special methods
     //  UPDATE
     // modify the refernce array
     // save the instance
